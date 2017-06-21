@@ -321,4 +321,23 @@ class Jbuilder
   end
 end
 
-require 'jbuilder/railtie' if defined?(Rails)
+###################################
+#
+#  I commented this out because we
+#  put a fake Rails class in engine
+#  so certain gems work. After the
+#  rails 5 upgrade, a bunch of stuff now
+#  tries to integrate with rails by
+#  checking if Rails exists. this sucks
+#  because if we remove Rails class,
+#  other gems will blow up.
+#
+#  yucky having to fork gems for this...
+#  sorry for the pain this causes.
+#
+###################################
+
+# require 'jbuilder/railtie' if defined?(Rails)
+
+###################################
+###################################
